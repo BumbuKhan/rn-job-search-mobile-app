@@ -12,7 +12,6 @@ const SLIDE_DATA = [
 export default class AuthScreen extends Component {
     onSlideComplete = () => {
         const {navigate} = this.props.navigation;
-
         navigate('auth');
     };
 

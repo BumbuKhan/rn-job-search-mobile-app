@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="325bde87-0a56-4111-b517-3f0fde0fe809" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Slides.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/AuthScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/DeckScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/MapScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/ReviewScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/SettingsScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/WelcomeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/WelcomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/WelcomeScreen.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,8 +29,8 @@
       <file leaf-file-name="WelcomeScreen.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/screens/WelcomeScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="195">
+              <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -143,16 +138,6 @@
             <path>
               <item name="job" type="b2602c69:ProjectViewProjectNode" />
               <item name="job" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="job" type="b2602c69:ProjectViewProjectNode" />
-              <item name="job" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="job" type="b2602c69:ProjectViewProjectNode" />
-              <item name="job" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -288,12 +273,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524591530346</updated>
       <workItem from="1524591532444" duration="158000" />
-      <workItem from="1524622798772" duration="6274000" />
+      <workItem from="1524622798772" duration="6472000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6432000" />
+    <option name="totallyTimeSpent" value="6630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="6" />
@@ -736,10 +721,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/screens/WelcomeScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="195">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
