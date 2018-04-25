@@ -6,7 +6,9 @@ import reducers from '../reducers';
 const store = createStore(
     reducers,
     {},
-    compose(thunk)
+    compose(
+        applyMiddleware(thunk)
+    )
 );
 
 export default store;
