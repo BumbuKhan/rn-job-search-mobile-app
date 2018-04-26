@@ -1,5 +1,7 @@
+import _ from 'lodash';
 import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {AsyncStorage} from 'react-native';
+import {AppLoading} from 'expo';
 
 import Slides from '../components/Slides';
 
@@ -10,12 +12,30 @@ const SLIDE_DATA = [
 ];
 
 export default class AuthScreen extends Component {
+    state = { token: null };
+
+    async componentWillMount() {
+        let token = await AsyncStorage.getItem('fb_token');
+
+        if (token) {
+            this.props.navigation.navigate('main');
+        } else {
+            this.setState({token: false});
+        }
+    }
+
     onSlideComplete = () => {
         const {navigate} = this.props.navigation;
         navigate('auth');
     };
 
     render() {
+        if (_.isNull(this.state.token)) {
+            return (
+                <AppLoading />
+            );
+        }
+
         return (
             <Slides
                 data={SLIDE_DATA}

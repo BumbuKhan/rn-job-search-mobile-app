@@ -13,7 +13,7 @@ export const facebookLogin = () => async dispatch => {
             payload: token
         });
     } else {
-        // hasn't been uthenticated yet...
+        // hasn't been authenticated yet...
         await doFacebookLogin(dispatch);
     }
 };

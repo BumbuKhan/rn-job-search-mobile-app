@@ -11,6 +11,12 @@ class AuthScreen extends Component {
         AsyncStorage.removeItem('fb_token');
     }
 
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.token) {
+            this.props.navigation.navigate('main');
+        }
+    }
+
     render() {
         return (
             <View style={styles.container}>
@@ -28,4 +34,8 @@ const styles = StyleSheet.create({
     }
 });
 
-export default connect(null, {facebookLogin})(AuthScreen);
+function mapStateToProps({ auth }) {
+    return {token: auth.token}
+}
+
+export default connect(mapStateToProps, {facebookLogin})(AuthScreen);
