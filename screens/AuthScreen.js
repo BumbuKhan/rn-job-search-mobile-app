@@ -1,7 +1,16 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, AsyncStorage} from 'react-native';
+import {connect} from 'react-redux';
 
-export default class AuthScreen extends Component {
+import {facebookLogin} from '../actions';
+
+class AuthScreen extends Component {
+    componentDidMount() {
+        this.props.facebookLogin();
+
+        AsyncStorage.removeItem('fb_token');
+    }
+
     render() {
         return (
             <View style={styles.container}>
@@ -18,3 +27,5 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     }
 });
+
+export default connect(null, {facebookLogin})(AuthScreen);
